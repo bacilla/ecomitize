@@ -1,0 +1,22 @@
+<config>
+    <global>
+        <blocks>
+            <first_module>
+                <class>First_Module_Block</class>
+            </first_module>
+        </blocks>
+    </global>
+
+    <frontend>
+        <routers>
+            <first_module>
+                <use>standard</use>
+                <args>
+                    <module>First_Module</module>
+                    <frontName>foo</frontName>
+                </args>
+            </first_module>
+        </routers>
+    </frontend>
+
+</config>

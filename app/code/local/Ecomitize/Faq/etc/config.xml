@@ -1,0 +1,76 @@
+<config>
+    <modules>
+        <Ecomitize_Faq>
+            <version>0.1.0</version>
+        </Ecomitize_Faq>
+    </modules>
+
+    <global>
+        <blocks>
+            <faqs>
+                <class>Ecomitize_Faq_Block</class>
+            </faqs>
+        </blocks>
+        <helpers>
+            <faqs>
+                <class>Ecomitize_Faq_Helper</class>
+            </faqs>
+        </helpers>
+        <models>
+            <faqs>
+                <class>Ecomitize_Faq_Model</class>
+                <resourceModel>faqs_mysql4</resourceModel>
+            </faqs>
+            <faqs_mysql4>
+                <class>Ecomitize_Faq_Model_Mysql4</class>
+                <entities>
+                    <questions>
+                        <table>faqs</table>
+                    </questions>
+                </entities>
+            </faqs_mysql4>
+        </models>
+    </global>
+
+    <frontend>
+        <routers>
+            <faqs>
+                <use>standard</use>
+                <args>
+                    <module>Ecomitize_Faq</module>
+                    <frontName>faqs</frontName>
+                </args>
+            </faqs>
+        </routers>
+        <layout>
+            <updates>
+                <faqs>
+                    <file>ecomitize.xml</file>
+                </faqs>
+            </updates>
+        </layout>
+    </frontend>
+
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <faqs after="Mage_Adminhtml">Ecomitize_Faq_Adminhtml</faqs>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+
+    <adminhtml>
+        <layout>
+            <updates>
+                <faqs>
+                    <file>ecomitize_faq.xml</file>
+                </faqs>
+            </updates>
+        </layout>
+    </adminhtml>
+
+</config>

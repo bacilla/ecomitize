@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <First_Module>
+            <active>true</active>
+            <codePool>local</codePool>
+        </First_Module>
+    </modules>
+</config>

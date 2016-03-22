@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<widgets>
+    <faqs type="faqs/questions" translate="name description" module="faqs">
+        <name>FAQs</name>
+        <description>FAQs widget</description>
+        <parameters>
+            <link_options>
+                <label>Question ids:</label>
+                <visible>1</visible>
+                <required>1</required>
+                <type>text</type>
+            </link_options>
+        </parameters>
+    </faqs>
+</widgets>

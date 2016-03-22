@@ -1,0 +1,22 @@
+<config>
+
+    <global>
+        <blocks>
+            <vaimo_catalog>
+                <class>Vaimo_Catalog_Block</class>
+            </vaimo_catalog>
+        </blocks>
+    </global>
+
+    <frontend>
+        <routers>
+            <vaimo_catalog>
+                <use>standard</use>
+                <args>
+                    <module>Vaimo_Catalog</module>
+                    <frontName>foo</frontName>
+                </args>
+            </vaimo_catalog>
+        </routers>
+    </frontend>
+</config>

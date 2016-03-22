@@ -1,0 +1,30 @@
+<config>
+    <menu>
+        <catalog>
+            <children>
+                <faqs translate="title">
+                    <title>FAQs</title>
+                    <sort_order>40</sort_order>
+                    <action>adminhtml/faq/index</action>
+                </faqs>
+            </children>
+        </catalog>
+    </menu>
+
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <catalog>
+                        <children>
+                            <faqs>
+                                <title>FAQs Permissions</title>
+                                <sort_order>40</sort_order>
+                            </faqs>
+                        </children>
+                    </catalog>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>

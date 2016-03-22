@@ -1,0 +1,32 @@
+<html>
+<body>
+<?php
+
+
+    $newDirection = $this->getOrderDirection() == 'asc' ? 'desc' : 'asc';
+    $r = $this->getRequest();
+    $urlWithoutParameters = $this->getBaseUrl() . $r->getModuleName() .DS. $r->getControllerName() .DS. $r->getActionName() . DS . 'direction' . DS . $newDirection;
+?>
+
+    <form action="<?php echo $urlWithoutParameters ?>" method="GET">
+        <button type="submit">Change Order</button>
+    </form>
+
+    <ul style="list-style-type: none; overflow: auto;">
+<?php
+
+    $collection = $this->getProducts();
+    foreach( $collection as $product ):
+?>
+
+        <li style="margin-right: 40px; float: left; text-align: center;">
+            <a href="<?php echo $product->getProductUrl() ?>">
+                <img style="display: inline-block; margin-bottom: 20px;" src="<?php echo Mage::helper('catalog/image')->init($product, 'image')->resize(150) ?>"><br />
+                <?php echo $product->getName() ?>
+            </a>
+        </li>
+
+<?php endforeach; ?>
+    </ul>
+</body>
+</html>

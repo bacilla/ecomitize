@@ -1,0 +1,55 @@
+<config>
+<menu>
+    <catalog>
+        <children>
+            <training translate="title">
+                <title>manage Animals</title>
+                <sort_order>40</sort_order>
+                <children>
+                    <stalis translate="title">
+                        <title>What's in my zoo</title>
+                        <sort_order>2</sort_order>
+                        <action>adminhtml/animal/index</action>
+                    </stalis>
+                </children>
+            </training>
+        </children>
+    </catalog>
+</menu>
+
+
+<acl>
+<resources>
+    <admin>
+        <children>
+            <catalog>
+                <children>
+                    <training>
+                        <title>Animal Permissions</title>
+                        <sort_order>40</sort_order>
+                        <children>
+                            <stalis translate="title">
+                                <title>What's in my zoo</title>
+                                <sort_order>2</sort_order>
+                            </stalis>
+                        </children>
+                    </training>
+                </children>
+            </catalog>
+            <system>
+                    <children>
+                        <config>
+                            <children>
+                                <training translate="title">
+                                    <title>Tranining Animal</title>
+                                    <sort_order>555</sort_order>
+                                </training>
+                            </children>
+                        </config>
+                    </children>
+            </system>
+        </children>
+    </admin>
+</resources>
+</acl>
+</config>

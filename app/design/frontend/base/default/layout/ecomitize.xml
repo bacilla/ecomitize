@@ -1,0 +1,14 @@
+<layout>
+    <faqs_index_index>
+        <reference name="content">
+            <block type="page/html" name="questions" template="faqs/questions.phtml" />
+        </reference>
+    </faqs_index_index>
+
+    <cms_index_index>
+        <reference name="content">
+            <block type="page/html" name="home.questions" template="faqs/home.phtml" />
+        </reference>
+    </cms_index_index>
+
+</layout>
