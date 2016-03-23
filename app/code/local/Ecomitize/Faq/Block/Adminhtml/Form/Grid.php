@@ -30,6 +30,7 @@ class Ecomitize_Faq_Block_Adminhtml_Form_Grid extends Mage_Adminhtml_Block_Widge
         $this->addColumn('question', array(
             'header'    => Mage::helper('faqs')->__('Question'),
             'align'     =>'left',
+            'width'     => '400px',
             'index'     => 'question',
         ));
 

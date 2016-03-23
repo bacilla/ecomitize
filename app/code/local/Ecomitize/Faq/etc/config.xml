@@ -30,6 +30,14 @@
                 </entities>
             </faqs_mysql4>
         </models>
+        <resources>
+            <ecomitize_faq_setup>
+                <setup>
+                    <module>Ecomitize_Faq</module>
+                    <class>Mage_Core_Model_Resource_Setup</class>
+                </setup>
+            </ecomitize_faq_setup>
+        </resources>
     </global>
 
     <frontend>

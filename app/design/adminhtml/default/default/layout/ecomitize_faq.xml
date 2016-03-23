@@ -1,6 +1,5 @@
 <layout>
 
-
     <adminhtml_faq_index>
         <reference name="content">
             <block type="faqs/adminhtml_form" name="faqs_form" />
